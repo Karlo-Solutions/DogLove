@@ -1,0 +1,23 @@
+{
+  "name": "doglove",
+  "version": "1.0.0",
+  "description": "este es el DogLove",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scastro93/DogLove.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scastro93/DogLove/issues"
+  },
+  "homepage": "https://github.com/scastro93/DogLove#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1"
+  }
+}
