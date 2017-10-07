@@ -1,0 +1,27 @@
+{
+  "name": "doglove",
+  "version": "1.0.0",
+  "description": "If you are an AngularJS developer and want to use the UI framework 'Materialize'? Here you can clone an AngularJS seed project using Materialize.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scastro93/DogLove.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scastro93/DogLove/issues"
+  },
+  "homepage": "https://github.com/scastro93/DogLove#readme",
+  "devDependencies": {
+    "@angular/cli": "^1.4.5"
+  },
+  "dependencies": {
+    "angular-route": "^1.6.6",
+    "jquery": "^3.2.1",
+    "materialize": "^1.0.0"
+  }
+}
