@@ -1,0 +1,32 @@
+{
+  "name": "doglove",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Santiago C. <scas93@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/scastro93/DogLove",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.5.5",
+    "fontawesome": "*",
+    "jquery": "2.1.4",
+    "angular-material": "1.0.0",
+    "angular-resource": "1.4.7",
+    "angular-ui-router":"0.2.15",
+    "ngmap":"1.16.3",
+    "socket.io-client":"1.3.7",
+    "ngstorage":"0.3.10",
+    "angular-file-upload":"2.2.0",
+    "moment":"2.13.0"
+  },
+  "private": true
+
+}
