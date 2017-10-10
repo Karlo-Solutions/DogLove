@@ -1,6 +1,6 @@
 (function(window, angular, undefined) {'use strict';
 
-  var urlBase = "http://52.8.192.6:3000/api";
+var urlBase = "http://52.8.192.6:3000/api";
 var authHeader = 'authorization';
 
 function getHost(url) {

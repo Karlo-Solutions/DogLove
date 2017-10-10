@@ -1,0 +1,124 @@
+<div ng-include="'app/shared/header/header.html'"></div>
+<section class="padding text-center subHeader">
+    <h1>Tu Perfil</h1>
+
+    <p>Aquí encontraras el perfil publico que los usuarios podrán ver</p>
+</section>
+<section class="padding bg-gray">
+    <form novalidate ng-disabled="true">
+        <fieldset ng-disabled="true">
+            <div class="container">
+                <div layout="column" layout-gt-xs="row">
+                    <div flex="20">
+                        <ul class="sideLeftMenu">
+                            <li>
+                                <a ui-sref="profile">Perfil</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div flex="80">
+                        <div class="whiteContainer">
+                            <div layout="column" layout-gt-xs="row" layout-padding>
+                                <div flex="20" flex-xs="100" class="text-center">
+                                    <h3>Datos del generales</h3>
+                                    <!--<md-button md-no-ink class="md-primary" ng-click="test()">CAMBIAR IMAGEN</md-button>-->
+                                </div>
+                                <div flex="50" flex-xs="100">
+                                    <div class="gula-input-container">
+                                        <label>
+                                            Nombre de la persona
+                                        </label>
+                                        <input type="text" ng-model="Algo Partida">
+                                    </div>
+                                    <div class="gula-input-container">
+                                        <label>
+                                            Decripción
+                                        </label>
+                                        <input type="text" ng-model="Mister Aldo">
+                                    </div>
+                                    <div class="gula-input-container">
+                                        <label>
+                                            Dirección
+                                        </label>
+                                        <input type="text" ng-model="Puerta de Hierro 234">
+                                    </div>
+                                    <div class="gula-input-container">
+                                        <label>
+                                            Teléfono
+                                        </label>
+                                        <input type="text" ng-model="profile.phone">
+                                    </div>
+                                    <div class="gula-input-container">
+                                        <label>
+                                            Email
+                                        </label>
+                                        <input type="email" ng-model="profile.email">
+                                    </div>
+                                </div>
+                                <div flex="20" flex-xs="100">
+                                    <p class="quotes margin-top-20x">
+
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div layout="column" layout-gt-xs="row" layout-padding>
+                                <div flex="20" flex-xs="100" class="text-center">
+                                    <h3>Ubicación</h3>
+                                </div>
+
+                                <div flex="50" flex-xs="100">
+
+                                    <div class="gula-input-container">
+                                        <label>
+                                            País
+                                        </label>
+                                        <input type="text" ng-model="profile.country">
+                                    </div>
+                                    <div class="gula-input-container">
+                                        <label>
+                                            Estado
+                                        </label>
+                                        <input type="text" ng-model="profile.state">
+                                    </div>
+                                    <div class="gula-input-container">
+                                        <label>
+                                            Ciudad
+                                        </label>
+                                        <input type="text" ng-model="profile.city">
+                                    </div>
+                                    <div class="gula-input-container">
+                                        <label>
+                                            Colonia
+                                        </label>
+                                        <input type="text" ng-model="profile.block">
+                                    </div>
+                                    <div class="mapContainer">
+                                        <ng-map zoom="12"  center="{{mapConfig.center}}"
+                                                style="height:250px">
+                                            <marker
+                                                    position="{{profile.location.latitude}},{{profile.location.longitude}}"
+                                                    ></marker>
+                                        </ng-map>
+                                    </div>
+                                    <!--<md-button class="md-raised md-primary left margin-top-30x"-->
+                                               <!--ng-click="saveChanges()">-->
+                                        <!--Guardar-->
+                                    <!--</md-button>-->
+
+                                </div>
+                                <div flex="20" flex-xs="100">
+                                    <p class="quotes margin-top-20x">
+
+                                    </p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+</section>
+<div ng-include="'app/shared/footer/footer.html'"></div>
