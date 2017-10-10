@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Register</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</head>
+<body>
+  <div id="login">
+    <div class="container">
+      <div class="col l6 offset-l3 center">
+        <h2><img src="../../../assets/img/logo_sm.png" alt=""></h2>
+      </div>
+      <div class="loginForm">
+
+        <div class="">
+          <h3 class="text-center">¡Regístrate!</h3>
+          <div class="row">
+            <div class="col l12">
+              <md-input-container md-no-float class="md-block margin-top-30x">
+                <input ng-model="user.name" type="text" placeholder="Nombre de usuario">
+              </md-input-container>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col l10">
+              <md-input-container md-no-float class="md-block margin-top-30x">
+                <input ng-model="user.email" type="email" placeholder="Correo">
+              </md-input-container>
+            </div>
+            <div class="col l2">
+              <input type="checkbox" id="compartirCorreo" checked/>
+              <label for="compartirCorreo">Hacer público</label>
+            </div>
+          </div>
+            <div class="row">
+              <div class="col l12">
+              <md-input-container md-no-float class="md-block">
+                <input type="password" ng-model="user.password" placeholder="Contraseña">
+              </md-input-container>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col l12">
+              <md-input-container md-no-float class="md-block">
+                <input type="password" ng-model="user.password" placeholder="Confirmar contraseña">
+              </md-input-container>
+            </div>
+          </div>
+        </div>
+      </div>
+    <br>
+    <div class="divider"></div>
+    <br>
+    <div class="row">
+      <div class="col l10">
+        <md-input-container md-no-float class="md-block margin-top-30x">
+          <input ng-model="user.telefono" type="text" placeholder="Teléfono">
+        </md-input-container>
+      </div>
+      <div class="col l2">
+        <input type="checkbox" id="compartirTelefono" checked/>
+        <label for="compartirTelefono">Hacer público</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col l10">
+        <md-input-container md-no-float class="md-block margin-top-30x">
+          <input ng-model="user.lugar" type="text" placeholder="Lugar de residencia">
+        </md-input-container>
+      </div>
+      <div class="col l2">
+        <input type="checkbox" id="compartirUbicacion" checked/>
+        <label for="compartirUbicacion">Hacer público</label>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col l6 offset-l3 center">
+        <md-button class="waves-effect waves-light btn" ng-click="logon()">Confirmar registro</md-button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+</div>
+
+</body>
+</html>
