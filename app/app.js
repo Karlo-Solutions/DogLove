@@ -34,7 +34,53 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', '$httpP
                 controller: 'mainController',
                 resolve: resolve
             })
+            .state('menu', {
+                url: '/menu',
+                templateUrl: 'app/components/app/products/products.html',
+                controller: 'productsController',
+                resolve: resolve
+            })
+            .state('profile', {
+                url: '/profile',
+                templateUrl: 'app/components/app/profile/general/profileGeneral.html',
+                controller: 'profileGeneralController',
+                resolve: resolve
+            })
+            .state('matches', {
+                url: '/matches',
+                templateUrl: 'app/components/app/orders/orders.html',
+                controller: 'ordersController',
+                resolve: resolve
+            })
+
+            .state('detail', {
+                url: '/detail/:id',
+                templateUrl: 'app/components/app/orders/detail/detail.html',
+                controller: 'detailController',
+                resolve: resolve,
+                cache: false
+            })
+
 
         $urlRouterProvider.otherwise("login");
         //$locationProvider.html5Mode(true);
     }]);
+
+
+app.run(function ($rootScope, $state) {
+    $rootScope.uploadURL = "http://52.8.192.6:3000/api/Containers/profile/upload";
+    $rootScope.bgUploadURL = "http://52.8.192.6:3000/api/backgrounds/background/upload";
+    $rootScope.imagesURL = "http://52.8.192.6/images";
+});
+
+var resolve = {
+    isLoggedIn: function ($q, RestaurantUser, $state) {
+        var defer = $q.defer();
+        if (RestaurantUser.isAuthenticated()) {
+            defer.resolve();
+            return true;
+        }
+        $state.go('login');
+        return defer.promise;
+    }
+};

@@ -30,7 +30,7 @@ gulp.task('styles', function () {
 gulp.task('compress', function () {
 
     gulp.src(['./app/**/*.js', './views/**/*.js'])
-    //.pipe(exec('jsdoc views/ js/ -c conf.json -r'))
+        //.pipe(exec('jsdoc views/ js/ -c conf.json -r'))
         .pipe(uglify({mangle: false}))
         .pipe(concat('app.min.js'))
         .pipe(gulp.dest('dist'));

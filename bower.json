@@ -1,19 +1,5 @@
 {
-  "name": "doglove",
-  "description": "",
-  "main": "gulpfile.js",
-  "authors": [
-    "Santiago C. <scas93@gmail.com>"
-  ],
-  "license": "ISC",
-  "homepage": "https://github.com/scastro93/DogLove",
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
+  "name": "Frontend",
   "dependencies": {
     "angular": "1.5.5",
     "fontawesome": "*",
