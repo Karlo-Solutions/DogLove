@@ -46,8 +46,8 @@ app.config(['$stateProvider', '$urlRouterProvider', '$locationProvider', '$httpP
                 controller: 'profileGeneralController',
                 resolve: resolve
             })
-            .state('matches', {
-                url: '/matches',
+            .state('orders', {
+                url: '/orders',
                 templateUrl: 'app/components/app/orders/orders.html',
                 controller: 'ordersController',
                 resolve: resolve
