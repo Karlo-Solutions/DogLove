@@ -65,11 +65,12 @@ function showDog() {
 function likedDog() {
     var ref = database.ref("user/" + firebase.auth().currentUser.uid + "/profilesReviewed").child(dogs[index]).set(
         true
-    ).then(function(){
+    ).then(function() {
         var refLiked = database.ref("user/" + dogs[index] + "/profilesReviewed").once('value', function(snapshot) {
             if (snapshot.hasChild(firebase.auth().currentUser.uid)) {
-                if(snapshot.child(firebase.auth().currentUser.uid).val()) {
-                    alert("Match!");
+                if (snapshot.child(firebase.auth().currentUser.uid).val()) {
+                    console.log("Match!");
+                    $('#matchModal').modal('show');
                 }
             }
             index++;
